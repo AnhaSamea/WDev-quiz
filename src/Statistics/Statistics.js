@@ -1,5 +1,6 @@
 import React from 'react';
 import { Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import './Statistics.css'
 const Statistics = () => {
     const data = [
         {
@@ -29,7 +30,7 @@ const Statistics = () => {
        
       ];
     return (
-        <div >
+        <div className='statistics'>
              <LineChart width={500} height={400} data={data}>
             <Line type="monotone" dataKey="total" stroke="#808000" activeDot={{ r: 8 }} />
             <XAxis dataKey="name" />
