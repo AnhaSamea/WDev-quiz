@@ -1,10 +1,15 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
-        <div>
-            <h2>This is header</h2>
-        </div>
+        <nav className='flex bg-lime-400 p-5 justify-between text-lime-900'>
+            <h2 className='font-bold text-3xl'>WDev Quiz</h2>
+            <div>
+            <Link className='p-3' to='/'>Home</Link>
+            <Link className='p-3' to='/statistics'>Statistics</Link>
+            <Link className='p-3' to='/blogs'>Blogs</Link>
+            </div>
+        </nav>
     );
 };
 
