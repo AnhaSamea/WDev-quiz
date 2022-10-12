@@ -3,15 +3,17 @@ import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 
 const TopicDetails = () => {
-    const topic = useLoaderData();
-    console.log(topic.data.questions[0]);
+    const details = useLoaderData();
+    
+    // console.log(details.data.questions[0]);
     // const {question,options} = topic.data;
     // const {question}
     return (
-        <div>
-            <h3>Detais</h3>
+        <div className=''>
+            
             {
-                topic.map(quiz=><Quiz key={quiz.id} quiz={quiz}></Quiz>)
+               
+                details.data.questions.map(detail=> <Quiz key={detail.id} detail={detail}></Quiz>)
             }
 
         </div>
