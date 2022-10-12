@@ -10,7 +10,7 @@ const Home = () => {
         <div className='bg-lime-200 py-10 px-10'>
             <div className='home flex'>
 
-                <h2 className='mt-36 pt-6 text-3xl font-bold text-lime-900'> Our trivia on web development has questions about every aspect concerning web development nowadays and will test your knowledge on the matter. Can you face all these questions?</h2>
+                <h2 className='mt-36 pt-6 text-3xl font-bold text-lime-900'> WDev Quiz has questions about every aspect concerning web development nowadays and will test your knowledge on the matter. Can you face all these questions?</h2>
                 <img src={image} alt="" />
             </div>
             <Topics className='p-30'></Topics>
